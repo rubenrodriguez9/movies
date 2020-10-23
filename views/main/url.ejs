@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %> 
+    <title>Now Playing</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <ul>
+        <% myData.forEach(data => { %>
+            <% let imageLink = data.backdrop_path %> 
+            <li class="title"><%= data.original_title %> </li>
+            <li><%= data.overview %> </li>
+            <br>
+         
+        <% }) %>
+    
+    </ul>
+    
+
+    
+</body>
+</html>
